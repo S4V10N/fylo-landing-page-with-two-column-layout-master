@@ -50,6 +50,7 @@ header{
 }
 .section-one img{
     width: 80%;
+    max-width: 60rem;
     margin: 0 0 4rem 0;
 }
 .section-one{
@@ -104,12 +105,13 @@ input::placeholder{
     opacity: 1;
     color: var(--LIGHT-GRAY);
 }
-form{
+.section-one form{
     margin: 0 auto 0 auto;
     width: fit-content;
 }
 .section-two img {
     width: 80%;
+    max-width: 60rem;
     margin-top: 6rem;
     margin-bottom: 10rem;
 }
@@ -221,6 +223,9 @@ form{
 .section-three{
     background-color: var(--DESATURATED-BLUE);
     height: 36rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .section-three__text {
     display: flex;
@@ -331,4 +336,163 @@ footer a:hover,footer a:active{
     display: flex;
     gap: 2rem;
     margin-bottom: 5rem;
+}
+@media (min-width: 600px) {
+    .section-two::before{
+        display: none;
+    }
+    .box-links,.box-links-1{
+        margin-left: 5%;
+    }
+    .footer__text{
+        width: fit-content;
+        margin-left: 5%;
+        align-self: flex-start;
+    }
+}
+@media (min-width: 1440px) {
+    header{
+        margin: 6rem 0 8rem 0;
+        padding: 0 8rem;
+    }
+    header img{
+        width: 15rem;
+    }
+    .section-one{
+        flex-direction: row-reverse;
+        width: 100%;
+        padding: 0 8rem;
+        text-align: left;
+        margin-bottom: 16rem;
+        justify-content: space-between;
+    }
+    .section-one img, .section-two img{
+        max-width: 60rem;
+    }
+    .section--text{
+        align-items: flex-start;
+    }
+    .section-one__box{
+        align-self: flex-start;
+        margin-top: 8rem;
+    }
+    .section-one .section--text h1{
+        width: 54rem;
+        font-size: 3.4rem;
+        line-height: 1.4em;
+    }
+    .section-one .section--text p{
+        width: 57rem;
+        font-size: 1.7rem;
+    }
+    .section-one form{
+        margin: 0;
+    }
+    .section-one input{
+        display: inline;
+    }
+    .section-one form :nth-child(1){
+        width: 32rem;
+        margin: 0 1.5rem 0 0;
+    }
+    .section-one form :nth-child(2){
+        width: 16rem;
+    }
+    .section-two::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url(images/bg-curve-desktop.svg);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
+        height: 10rem;
+        transform: translateY(-10rem);
+        display: block;
+        margin-bottom: 0;
+        display: flex;
+        flex-grow: 1;
+    }
+    .section-two{
+        margin-top: 0;
+        padding: 0 8rem;
+        height: 70rem;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    .section-two .section--text h2{
+        font-size: 3.4rem;
+    }
+    .section-two .section--text p{
+        font-size: 1.6rem;
+        width: 52rem;
+    }
+    .section-two .section--text :nth-child(3){
+        margin-bottom: 1.5rem;
+    }
+    .section-two__testimonials{
+        width: 40rem;
+    }
+    .section-two img{
+        margin: 0;
+        max-width: 50rem;
+    }
+    .section-two__testimonials p{
+        width: 32rem;
+    }
+    .section-three__text{
+        align-items: flex-start;
+        width: fit-content;
+        margin-bottom: 0;
+    }
+    .section-three__text h3{
+    margin: 0 0 2rem 0;
+    font-size: 2.8rem;
+    }
+    .section-three__text p{
+        width: 52rem;
+        font-size: 1.7rem;
+        line-height: 1.4em;
+        text-align: left;
+    }
+    .section-three form :nth-child(1){
+        width: 46rem;
+        height: 4rem;
+        margin-bottom: 1.5rem;
+    }
+    .section-three form :nth-child(2){
+        width: 20rem;
+        height: 4rem;
+    }
+    .section-three {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10rem 0 8rem;
+    }
+    .footer__text{
+        width: fit-content;
+        margin-bottom: 0;
+        align-self: center;
+    }
+    .box-links,.box-links-1{
+        margin: 0;
+        align-self: flex-start;
+        transform: translateY(20rem);
+    }
+    .socials{
+        margin: 0;
+        transform: translateX(-10rem);
+        align-self: flex-start;
+        transform: translateY(20rem);
+    }
+    footer{
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 8rem;
+        height: 38rem;
+    }
 }
