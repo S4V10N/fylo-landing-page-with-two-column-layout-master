@@ -336,6 +336,13 @@ footer a:hover,footer a:active{
     display: flex;
     gap: 2rem;
     margin-bottom: 5rem;
+    align-items: center;
+}
+.footer__text .contact span{
+    margin-bottom: 0;
+    transform: translateX(-1rem);
+    font-size: 1.6rem;
+    font-family: "Open Sans", serif;
 }
 @media (min-width: 600px) {
     .section-two::before{
@@ -480,13 +487,13 @@ footer a:hover,footer a:active{
     .box-links,.box-links-1{
         margin: 0;
         align-self: flex-start;
-        transform: translateY(20rem);
+        transform: translateY(20.5rem);
     }
     .socials{
         margin: 0;
         transform: translateX(-10rem);
         align-self: flex-start;
-        transform: translateY(20rem);
+        transform: translateY(20.7rem);
     }
     footer{
         align-items: center;
