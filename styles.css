@@ -126,15 +126,13 @@ input::placeholder{
 }
 .section-two::before{
     content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
     background-image: url(images/bg-curve-mobile.svg);
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
-    height: 4rem;
-    transform: translateY(-4rem);
+    height: 5rem;
+    max-height: auto;
+    transform: translateY(-5rem);
     display: block;
     margin-bottom: 6rem;
 }
@@ -345,8 +343,10 @@ footer a:hover,footer a:active{
     font-family: "Open Sans", serif;
 }
 @media (min-width: 600px) {
-    .section-two::before{
-        display: none;
+    .section-two::before {
+        background-image: url(images/bg-curve-desktop.svg);
+        height: 6rem;
+        transform: translateY(-6rem);
     }
     .box-links,.box-links-1{
         margin-left: 5%;
